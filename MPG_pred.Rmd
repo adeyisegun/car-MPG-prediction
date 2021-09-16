@@ -1,0 +1,47 @@
+---
+title: "Car MPG Prediction"
+author: "Olusegun Oyedele"
+date: "9/16/2021"
+output: ioslides_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the Course Project
+
+This is a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+Instructions:
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server
+3. Share the application link by pasting it into the provided text box
+4. Share your server.R and ui.R code on github
+
+## How to use the application
+
+Using the data provided by mtcars dataset, we fit a linear model to predict MPG based on displacement and horsepower.
+
+The application is running on (https://t513l6-olusegun-oyedele0adeyi.shinyapps.io/MPG-Milesgallon-Prediction/)
+
+ui.R, and Server.R Code in my github repository (https://github.com/adeyisegun/car-MPG-prediction)
+
+## mtcars Dataset
+
+The data used in the app comes from the mtcars dataset. 
+
+```{r summary}
+data(mtcars)
+summary(mtcars)
+```
+
+## Plot
+In the scatterplot below are represented the data used for the prediction model
+```{r plot}
+data(mtcars)
+plot(jitter(mtcars$mpg) ~ mtcars$disp,xlab="Displacement",ylab="MPG",
+     main="Scatterplot of mtcars Data",pch=19,frame.plot=FALSE,
+     col=ifelse(mtcars$am==1, "red", "blue"))
+```
+
