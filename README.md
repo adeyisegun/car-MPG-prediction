@@ -1,5 +1,5 @@
-Developing Data Products Course - Course Project: Shiny Application and Reproducible Pitch
-This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+Project: Shiny Application and Reproducible Pitch
+This project has two parts. First, we create a Shiny application and deploy it on Rstudio's servers. Second, we  use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about our application.
 
 Github Repository: https://github.com/adeyisegun/car-MPG-prediction
 
